@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エントリー | 株式会社トップビジョン１０２ 採用情報</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="株式会社トップビジョン１０２へのエントリーはこちらから。">
+    <style>
+        .page-header {
+            background: var(--hero-gradient);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 60px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .form-group label span.required {
+            background: #ef4444;
+            color: white;
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 8px;
+            vertical-align: text-bottom;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .form-actions {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        .radio-group input[type="radio"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px;
+                margin: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">TOP VISION 102 RECRUIT</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">私たちについて</a></li>
+                    <li><a href="index.html#jobs">募集要項</a></li>
+                    <li><a href="apply.html" class="btn btn-primary">エントリー</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>ENTRY</h1>
+            <p>エントリー</p>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="apply-section">
+        <div class="container">
+            <div class="form-container">
+                <p style="margin-bottom: 2rem; text-align: center;">
+                    下記フォームに必要事項をご入力の上、送信してください。<br>担当者より折り返しご連絡させていただきます。</p>
+
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="job-type">希望職種 <span class="required">必須</span></label>
+                        <select id="job-type" name="job-type" required>
+                            <option value="">選択してください</option>
+                            <option value="sales">営業職 (正社員)</option>
+                            <option value="admin">営業事務 (正社員/パート)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">必須</span></label>
+                        <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kana">フリガナ <span class="required">必須</span></label>
+                        <input type="text" id="kana" name="kana" placeholder="例：ヤマダ タロウ" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>性別</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male"> 男性</label>
+                            <label><input type="radio" name="gender" value="female"> 女性</label>
+                            <label><input type="radio" name="gender" value="other"> その他/回答しない</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthdate">生年月日 <span class="required">必須</span></label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">必須</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@topvision102.co.jp" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">電話番号 <span class="required">必須</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="090-1234-5678" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">志望動機・ご質問など</label>
+                        <textarea id="message" name="message" rows="5" placeholder="自由にご記入ください"></textarea>
+                    </div>
+
+                    <div class="form-group" style="text-align: center; margin-top: 30px;">
+                        <label style="font-weight: normal;">
+                            <input type="checkbox" required
+                                style="width: auto; transform: scale(1.2); margin-right: 8px;">
+                            <a href="#"
+                                style="text-decoration: underline; color: var(--secondary-color);">プライバシーポリシー</a>に同意する
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary" style="min-width: 200px;">送信内容を確認する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TOP VISION 102 Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
