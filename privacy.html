@@ -6,6 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プライバシーポリシー | 株式会社トップビジョン１０２</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 5rem;
+        }
+
+        .privacy-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .privacy-card h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .privacy-card h3 {
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-card h4 {
+            font-size: 1rem;
+            color: #334155;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .privacy-card p {
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-card ul {
+            list-style: none;
+            padding-left: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-card ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.4rem;
+            line-height: 1.7;
+        }
+
+        .privacy-card ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 6px;
+            height: 6px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+        }
+
+        .privacy-card .policy-date {
+            text-align: right;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .privacy-card .contact-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .privacy-card .contact-box p {
+            margin-bottom: 0.3rem;
+        }
+
+        .insurance-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.3rem 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .privacy-card {
+                padding: 20px;
+            }
+
+            .insurance-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -27,40 +127,164 @@
     <section class="page-header" style="margin-bottom: 3rem;">
         <div class="container">
             <h1>PRIVACY POLICY</h1>
-            <p>個人情報保護方針</p>
+            <p>プライバシーポリシー</p>
         </div>
     </section>
 
-    <div class="container" style="max-width: 800px; padding-bottom: 5rem;">
-        <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: var(--card-shadow);">
-            <h2>個人情報の取り扱いについて</h2>
-            <br>
-            <p>株式会社トップビジョン１０２（以下「当社」）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。
-            </p>
-            <br>
-            <h3>1. 個人情報の管理</h3>
-            <p>当社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。
-            </p>
-            <br>
-            <h3>2. 個人情報の利用目的</h3>
-            <p>ご入力いただいた個人情報は、採用選考及び入社手続きに必要な範囲内で利用いたします。応募者の同意なく他の目的で利用いたしません。</p>
-            <br>
-            <h3>3. 個人情報の第三者への開示・提供の禁止</h3>
-            <p>当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。</p>
+    <div class="container privacy-content">
+        <div class="privacy-card">
+
+            <!-- 個人情報保護方針 -->
+            <h2>個人情報保護方針</h2>
+            <p>株式会社トップビジョン102は、個人情報の保護、適正な管理が重要な社会的責務であることを認識し、個人情報保護に関する法令及びその他の規範を遵守して自主的なルール及び体制を確立し、以下の通り個人情報保護方針を定め、これを実行・維持してまいります。</p>
+
+            <ol style="padding-left: 1.5rem; line-height: 2;">
+                <li>当社の事業内容及び規模を考慮して適切な個人情報の取得、利用及び提供を行います。また、取得した個人情報については目的外の利用を行いません。また、そのための措置を講じます。</li>
+                <li>個人情報に関する事業上の要求事項及び法的又は国が定める指針、その他の規範・規制要求事項を遵守します。</li>
+                <li>個人情報の漏えい、滅失または、き損などの防止及び是正を図ります。</li>
+                <li>個人情報に関する苦情及び相談に対して、窓口を定め対応します。</li>
+                <li>個人情報保護マネジメントシステムを確立し、維持するために必要な体制を整備します。また、個人情報保護マネジメントシステムの継続的改善を行います。</li>
+            </ol>
+
+            <p class="policy-date">2023年06月02日 制定<br>株式会社トップビジョン102　代表取締役　古賀 裕基</p>
+
+            <div class="contact-box">
+                <p><strong>個人情報保護方針に関する問い合わせ先</strong></p>
+                <p>問い合わせ窓口責任者　電話：029-244-3338</p>
+            </div>
+
+            <!-- 個人情報の取扱いについて -->
+            <h2 style="margin-top: 3rem;">個人情報の取扱いについて</h2>
+
+            <p>株式会社トップビジョン102<br>茨城県水戸市千波町1795-1<br>代表取締役　古賀 裕基<br>個人情報保護管理者　業務部　電話：029-244-3338</p>
+
+            <p>当社は個人情報保護の重要性に鑑み、また、保険代理店業務に対する社会の信頼をより向上させるため、個人情報の保護に関する法律（個人情報保護法）その他の関連法令等を遵守して、個人情報を適正に取り扱うとともに、安全管理について適切な措置を講じます。</p>
+            <p>当社は、個人情報の取扱いについて従業者への教育・指導を徹底し、適正な取扱いが行われるよう取り組んでまいります。また、個人情報の取扱いに関する苦情・相談に迅速に対応し、当社の個人情報の取扱い及び安全管理に係る適切な措置については、適宜見直し改善いたします。</p>
+
+            <!-- 利用目的 -->
+            <h3>利用目的</h3>
+            <p>当社は、個人情報を次の目的のために利用します。これらの目的のほかに利用することはありません。</p>
+
+            <h4>(1) お客様の個人情報</h4>
             <ul>
-                <li>・お客さまの同意がある場合</li>
-                <li>・法令に基づき開示することが必要である場合</li>
+                <li>当社が委託を受けた保険会社の各種商品やサービスのご案内・提供、ご契約の維持管理、保険金・給付金などのお支払い</li>
+                <li>当社業務に関する情報提供・運営管理</li>
+                <li>その他保険代理店業務に関連・付随する業務</li>
             </ul>
-            <br>
-            <h3>4. お問い合せ</h3>
-            <p>当社の個人情報の取扱に関するお問い合せは下記までご連絡ください。</p>
-            <br>
-            <p>
-                株式会社トップビジョン１０２ 採用担当<br>
-                TEL: 03-XXXX-XXXX<br>
-                Mail: recruit@topvision102.co.jp
-            </p>
-            <br>
+
+            <h4>(2) お問い合わせ頂いた方の個人情報</h4>
+            <ul>
+                <li>お問い合わせへの対応</li>
+            </ul>
+
+            <h4>(3) 採用応募者の個人情報</h4>
+            <ul>
+                <li>書類審査</li>
+                <li>面接、採用選考</li>
+                <li>応募者への連絡・問合せ</li>
+            </ul>
+
+            <h4>(4) 従業者情報</h4>
+            <ul>
+                <li>当社業務実施のため</li>
+                <li>人事労務管理及び健康管理のため</li>
+                <li>社会保険その他各種手続きのため</li>
+                <li>給与支払等の社内事務処理のため</li>
+                <li>その他社内サービスの提供のため</li>
+            </ul>
+
+            <h4>(5) プライバシーマークの運用に関する情報</h4>
+            <ul>
+                <li>プライバシーマークの運用管理のため</li>
+            </ul>
+
+            <p>上記の利用目的を変更する場合には、その内容について改めて同意を得ます。</p>
+
+            <!-- 委託保険会社 -->
+            <h3>当社に対し保険代理店業務の委託を行う保険会社</h3>
+            <p>当社に対し保険募集業務の委託を行う保険会社の利用目的は、各社のホームページに掲載してあります。</p>
+
+            <div class="insurance-list" style="margin: 1rem 0;">
+                <ul>
+                    <li><a href="https://www.nisshinfire.co.jp/" target="_blank">日新火災海上保険株式会社</a></li>
+                    <li><a href="https://www.aig.co.jp/" target="_blank">AIG損害保険株式会社</a></li>
+                    <li><a href="https://www.tokiomarine-nichido.co.jp" target="_blank">東京海上日動火災保険株式会社</a></li>
+                    <li><a href="https://www.ms-ins.com" target="_blank">三井住友海上火災保険株式会社</a></li>
+                    <li><a href="https://aioinissaydowa.co.jp/" target="_blank">あいおいニッセイ同和損害保険株式会社</a></li>
+                    <li><a href="https://www.sompo-japan.co.jp/" target="_blank">損害保険ジャパン株式会社</a></li>
+                    <li><a href="https://www.axa.co.jp/" target="_blank">アクサ生命保険株式会社</a></li>
+                    <li><a href="https://www.nnlife.co.jp/" target="_blank">エヌエヌ生命保険株式会社</a></li>
+                    <li><a href="https://www.fwdlife.co.jp/" target="_blank">FWD生命保険株式会社</a></li>
+                    <li><a href="https://www.orixlife.co.jp/" target="_blank">オリックス生命保険株式会社</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.gib-life.co.jp/" target="_blank">ジブラルタ生命保険株式会社</a></li>
+                    <li><a href="https://www.sonylife.co.jp/" target="_blank">ソニー生命保険株式会社</a></li>
+                    <li><a href="https://www.himawari-life.co.jp/" target="_blank">SOMPOひまわり生命保険株式会社</a></li>
+                    <li><a href="https://www.tmn-anshin.co.jp/" target="_blank">東京海上日動あんしん生命保険株式会社</a></li>
+                    <li><a href="https://neofirst.co.jp/" target="_blank">ネオファースト生命保険株式会社</a></li>
+                    <li><a href="https://www.manulife.co.jp/" target="_blank">マニュライフ生命保険株式会社</a></li>
+                    <li><a href="https://www.msa-life.co.jp/" target="_blank">三井住友海上あいおい生命保険株式会社</a></li>
+                    <li><a href="https://www.metlife.co.jp/" target="_blank">メットライフ生命保険株式会社</a></li>
+                    <li><a href="https://www.zurichlife.co.jp/" target="_blank">チューリッヒ生命保険会社</a></li>
+                    <li><a href="https://www.nissay.co.jp/" target="_blank">日本生命保険相互会社</a></li>
+                </ul>
+            </div>
+
+            <!-- 第三者提供 -->
+            <h3>第三者への提供</h3>
+            <p>当社は、次の場合を除いて、ご本人の同意なく個人情報を第三者へ提供することはありません。</p>
+            <ul>
+                <li>法令に基づく場合</li>
+                <li>人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき。</li>
+                <li>公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき。</li>
+                <li>国の機関、若しくは地方公共団体又はその委託を受けた者が、法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき。</li>
+            </ul>
+
+            <!-- 安全管理措置 -->
+            <h3>安全管理措置</h3>
+
+            <h4>(1) 個人情報保護方針の策定</h4>
+            <p>個人情報の適正な取扱いの確保のため、個人情報保護方針を策定します。</p>
+
+            <h4>(2) 個人情報の取扱いに係る規程の整備</h4>
+            <p>取扱いの各局面（個人情報の取得・入力、移送・送信、利用・加工、保管・バックアップ、消去・廃棄）において、取扱方法、責任者・担当者およびその任務等を定めた「個人情報保護規程」を策定しています。</p>
+
+            <h4>(3) 組織的安全管理措置</h4>
+            <p>個人情報の取扱いに関する責任者を設置するとともに、個人情報を取り扱う従業者および個人情報の範囲を明確にしています。個人情報の取扱状況について、定期的に日常業務での個人情報の取扱いの点検を実施するとともに、内部監査計画書に基づき計画的に内部監査を実施しています。</p>
+
+            <h4>(4) 人的安全管理措置</h4>
+            <p>個人情報の取扱いに関する留意事項について、従業者に定期的な研修を実施しています。また、従業者の入社時及び退職時に「秘密保持に関する誓約書」を提出させています。</p>
+
+            <h4>(5) 物理的安全管理措置</h4>
+            <p>個人情報を取扱う区域において、従業者の入退室管理および持ち込む機器等の制限を行うとともに、権限を有しない者による個人情報の閲覧を防止する措置を実施しています。</p>
+
+            <h4>(6) 技術的安全管理措置</h4>
+            <p>アクセス制御を実施して、担当者および取り扱う個人情報等の範囲を限定しています。</p>
+
+            <h4>(7) 外的環境の把握</h4>
+            <p>個人情報を外国で取り扱う場合において、当該国の個人情報の保護に関する制度を把握した上で、適切な安全管理措置を実施します。</p>
+
+            <!-- 開示等の請求手続き -->
+            <h3>開示等の請求手続き</h3>
+            <p>当社は保有する保有個人データの利用目的の通知、開示、内容の訂正、追加又は削除、利用の停止、消去及び第三者への提供の停止（以下、"開示等"という）及び、第三者提供記録の開示の依頼があった場合、遅滞なく対応いたします。</p>
+            <p>請求手続きの詳細につきましては、以下の問合せ窓口までお電話にてお問い合わせください。ご本人及び代理人の方のご本人確認をさせていただいたうえで、対応させていただいております。なお、ご請求にあたりまして、当社規定の料金が発生する場合がございますので、ご了承ください。</p>
+
+            <!-- 苦情・お問い合わせ -->
+            <h3>苦情・お問い合わせ</h3>
+            <p>個人情報保護に関する苦情やお問い合わせは、以下の問合せ窓口までお電話にてお願いいたします。また保険事故に関するご照会については下記お問い合わせ窓口のほか、保険証券に記載の保険会社の事故相談窓口にお問い合わせください。なお、ご照会者がご本人であることをご確認させていただいたうえで、対応させていただきますので、予めご了承願います。</p>
+
+            <div class="contact-box">
+                <p><strong>お問い合わせ窓口</strong></p>
+                <p>株式会社トップビジョン102　問い合わせ窓口責任者</p>
+                <p>【弊社所在地】水戸市千波町1795-1</p>
+                <p>【電話番号】029-244-3338</p>
+                <p>【受付時間】平日9時～18時</p>
+                <p>【ホームページ】<a href="https://top-vision102.co.jp" target="_blank">https://top-vision102.co.jp</a></p>
+            </div>
+
+            <p class="policy-date">最終更新日：2023年09月01日</p>
+
             <div style="text-align: center; margin-top: 2rem;">
                 <a href="apply.html" class="btn btn-primary">エントリーフォームに戻る</a>
             </div>
