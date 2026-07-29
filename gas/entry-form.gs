@@ -43,16 +43,13 @@ function doPost(e) {
       + '■ 志望動機・ご質問：\n' + message + '\n'
       + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n';
 
-    MailApp.sendEmail({
-      to: 'info@top-vision102.co.jp',
-      subject: companySubject,
-      body: companyBody,
+    // 1. 会社への通知メール
+    GmailApp.sendEmail('info@top-vision102.co.jp', companySubject, companyBody, {
+      name: '採用サイトエントリー通知',
       replyTo: email
     });
 
-    // ============================================================
     // 2. 応募者への確認メール
-    // ============================================================
     var applicantSubject = '【株式会社トップビジョン102】エントリーを受け付けました';
     var applicantBody = name + ' 様\n\n'
       + 'この度は株式会社トップビジョン102の採用サイトより\n'
@@ -79,12 +76,11 @@ function doPost(e) {
       + 'HP: https://top-vision102.co.jp\n'
       + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n';
 
-    MailApp.sendEmail({
-      to: email,
-      subject: applicantSubject,
-      body: applicantBody,
-      name: '株式会社トップビジョン102 採用担当'
-    });
+    if (email) {
+      GmailApp.sendEmail(email, applicantSubject, applicantBody, {
+        name: '株式会社トップビジョン102 採用担当'
+      });
+    }
 
     // ============================================================
     // 成功レスポンス
@@ -100,4 +96,9 @@ function doPost(e) {
       message: error.toString()
     })).setMimeType(ContentService.MimeType.JSON);
   }
+}
+
+// 権限承認用のテスト関数（1回実行して許可するために使用）
+function testSend() {
+  GmailApp.sendEmail('info@top-vision102.co.jp', '権限テスト', '権限承認用テストです。');
 }

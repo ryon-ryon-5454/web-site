@@ -739,15 +739,15 @@
             });
 
             // STEP 2 → STEP 3 (Submit)
-            // ★★★ 下のURLをGoogle Apps ScriptのウェブアプリURLに置き換えてください ★★★
-            const GAS_URL = 'https://script.google.com/macros/s/GAS_URLを貼り付けてください/exec';
+            // ★ Google Apps ScriptのウェブアプリURL ★
+            const GAS_URL = 'https://script.google.com/macros/s/AKfycbyrzE_KeKxXi2A_8KCp5u75sNAvHGGdy8JHuFaLWsDDON4KNpCLHrC8w1y0IfaqeupD/exec';
 
             btnSubmit.addEventListener('click', () => {
                 btnSubmit.disabled = true;
                 btnSubmit.textContent = '送信中...';
                 btnSubmit.style.opacity = '0.7';
 
-                // フォームデータをJSONで取得
+                // フォームデータをJSON化
                 const selectedGender = form.querySelector('input[name="gender"]:checked');
                 const formDataObj = {
                     'job-type': document.getElementById('job-type').value,
@@ -763,23 +763,18 @@
                 // Google Apps Script へ送信
                 fetch(GAS_URL, {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'text/plain;charset=utf-8'
-                    },
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
                     body: JSON.stringify(formDataObj)
                 })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        stepConfirm.classList.add('hidden');
-                        stepConfirm.classList.remove('fade-enter');
-                        stepThankyou.classList.remove('hidden');
-                        stepThankyou.classList.add('fade-enter');
-                        setStep(3);
-                        scrollToTop();
-                    } else {
-                        throw new Error(data.message || '送信に失敗しました');
-                    }
+                .then(response => {
+                    // no-corsモードではレスポンスが読めないため、エラーが出なければ成功とみなす
+                    stepConfirm.classList.add('hidden');
+                    stepConfirm.classList.remove('fade-enter');
+                    stepThankyou.classList.remove('hidden');
+                    stepThankyou.classList.add('fade-enter');
+                    setStep(3);
+                    scrollToTop();
                 })
                 .catch(error => {
                     alert('送信中にエラーが発生しました。お手数ですが、もう一度お試しください。');
