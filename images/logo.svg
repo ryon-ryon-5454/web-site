@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="blueGradLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#021c96"/>
+      <stop offset="100%" stop-color="#0d4df2"/>
+    </linearGradient>
+    <linearGradient id="blueGradRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1862f5"/>
+      <stop offset="100%" stop-color="#2d8cff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Ring Curve -->
+  <path d="M 205,65 C 135,70 65,120 52,205 C 38,295 100,380 200,380 C 248,380 292,360 325,330 C 235,372 110,325 80,240 C 55,170 115,85 205,65 Z" fill="url(#blueGradLeft)" />
+
+  <!-- Right Ring Curve -->
+  <path d="M 295,65 C 365,70 435,120 448,205 C 462,295 400,380 300,380 C 252,380 390,325 420,240 C 445,170 385,85 295,65 Z" fill="url(#blueGradRight)" />
+
+  <!-- Top Center Horn Accent -->
+  <path d="M 197,175 C 205,120 250,75 310,70 C 275,85 235,110 220,150 Z" fill="#0427b8" />
+
+  <!-- Text: TOP VISION 102 CO. ® -->
+  <text x="250" y="445" font-family="'Times New Roman', 'Georgia', 'serif'" font-size="34" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+    TOP VISION 102 C<tspan font-size="28">O</tspan>.<tspan font-size="18" dy="-14">®</tspan>
+  </text>
+</svg>
