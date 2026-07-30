@@ -260,6 +260,108 @@ header .container {
     flex-grow: 1;
 }
 
+/* Contact Section */
+.contact {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.contact-subtitle {
+    text-align: center;
+    max-width: 680px;
+    margin: -1rem auto 3rem auto;
+    color: var(--text-color);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: var(--background-color);
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+    border-color: var(--secondary-color);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.contact-detail {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.phone-number {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+}
+
+.phone-number:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.email-link {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    word-break: break-all;
+}
+
+.email-link:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.contact-note {
+    font-size: 0.88rem;
+    color: #64748b;
+}
+
+.contact-btn {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 280px;
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
