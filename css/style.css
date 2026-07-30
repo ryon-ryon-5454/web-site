@@ -366,12 +366,92 @@ header .container {
 footer {
     background-color: var(--primary-color);
     color: white;
-    padding: 3rem 0;
+    padding: 4rem 0 2rem 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+}
+
+.footer-company {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-logo-symbol {
+    width: 48px;
+    height: 48px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.footer-company-info h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-company-info p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 0.2rem;
+    opacity: 0.9;
+}
+
+.footer-company-info a {
+    color: #cbd5e1;
+    transition: color 0.3s ease;
+}
+
+.footer-company-info a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-bottom {
     text-align: center;
 }
 
-footer p {
-    opacity: 0.7;
+.footer-bottom p {
+    opacity: 0.6;
+    font-size: 0.88rem;
+}
+
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-company {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
 }
 
 /* Mobile Menu */
